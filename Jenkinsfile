@@ -1,7 +1,6 @@
 node('jdk8') {
     stage('VCS') {
-        git branch:'REL_INT_1.0', url: 'https://github.com/GitPracticeRepo/spring-petclinic.git'
-    }
+        git branch:'teja', url: 'https://github.com/tejachennuru1/spring-framework-petclinic.git'
     stage("build") {
         sh '/usr/bin/mvn /usr/share/man/man1/mvn.1.gz'
     }  
@@ -9,4 +8,4 @@ node('jdk8') {
         junit '**/surefire-reports/*.xml'
     }      
         }
-    
+}   
