@@ -9,5 +9,5 @@ node('jdk8') {
         junit '**/surefire-reports/*.xml'
     }      
     
-     }
+}
   
